@@ -1,0 +1,170 @@
+body {
+    font-family: 'Georgia', serif;
+    background: #fdf3f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    text-align: center;
+    padding: 50px 0;
+    background: #ffe6e6;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 3em;
+  }
+  
+  section {
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .photo {
+    min-width: 350px;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .photo img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .photos {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+    padding: 10px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background: #ffcccc;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #ff9999;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #ff9999;
+  }
+  
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  justify-items: center;
+}
+
+.love-card {
+  width: 150px;
+  height: 200px;
+  background: #fff;
+  border: 2px solid #ff9999;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95em;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Georgia', serif;
+  line-height: 1.4;
+}
+
+.love-card:hover {
+  transform: translateY(-10px) rotate(1deg);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.love-card:nth-child(odd) {
+  transform: rotate(-1.5deg);
+}
+
+.love-card:nth-child(even) {
+  transform: rotate(1.5deg);
+}
+
+.love-card::before, .love-card::after {
+  content: "❤️";
+  position: absolute;
+  font-size: 1.2em;
+}
+
+.love-card::before {
+  top: 8px;
+  left: 10px;
+}
+
+.love-card::after {
+  bottom: 8px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.center {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.music-player {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 400px;
+  background: #ffe6e6;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.music-player h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+audio {
+  width: 100%;
+  border-radius: 5px;
+  display: none; 
+}
+
+.mute-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: opacity 0.3s;
+}
+
+
+.mute-icon:hover {
+  opacity: 0.7;
+}
